@@ -41,10 +41,10 @@ export default function App() {
   }, []);
 
   const products = [
-    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/imagens/soja.png' },
-    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/imagens/acucar.png' },
-    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/imagens/milho.png' },
-    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/imagens/proteina-animal.png' },
+    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: 'https://lh3.googleusercontent.com/d/1KGjAeZTO3jgIsk8savUiHRam4_G98BNx' },
+    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: 'https://lh3.googleusercontent.com/d/1-tVmgw4VQ6r9HP0FPWokQ4PoQhp6sU2g' },
+    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: 'https://lh3.googleusercontent.com/d/1Dh-p4G7LYtqzrWUn1lMlLoW9ba4EfY_R' },
+    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: 'https://lh3.googleusercontent.com/d/1_omxAdFAGMo3xFa9QgvaJtGpUW2sUv8X' },
   ];
 
   return (
@@ -111,10 +111,9 @@ export default function App() {
       <section id="home" className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/imagens/capa.png" 
+            src="https://lh3.googleusercontent.com/d/174fNE1rthXJwVr6pMEhXPPzERA2RkDu_" 
             alt="JRM Agro Background" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
             loading="eager"
             fetchPriority="high"
           />
@@ -263,10 +262,9 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-3xl bg-slate-200 relative group">
                 <img 
-                  src="/imagens/modelo.png" 
+                  src="https://lh3.googleusercontent.com/d/1FRkBnfbikmkobDhD5OcEe3v9oFuTX2FF" 
                   alt="Agriculture" 
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-green/60 to-transparent opacity-60"></div>
