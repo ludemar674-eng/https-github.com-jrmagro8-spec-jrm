@@ -114,7 +114,6 @@ export default function App() {
             src="/images/capa.png" 
             alt="JRM Agro Background" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
             loading="eager"
             fetchPriority="high"
           />
@@ -266,7 +265,6 @@ export default function App() {
                   src="/images/modelo.png" 
                   alt="Agriculture" 
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-green/60 to-transparent opacity-60"></div>
@@ -358,7 +356,6 @@ export default function App() {
                     src={product.image} 
                     alt={t.products[product.id as keyof typeof t.products]} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-agro-green/20 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -393,7 +390,6 @@ export default function App() {
                   src="/images/capa.png" 
                   alt="General Food" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-green to-transparent"></div>
                 <div className="absolute top-6 right-6 p-3 bg-white/10 backdrop-blur-md rounded-2xl text-white shadow-lg border border-white/20">
@@ -540,6 +536,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row justify-between w-full items-center space-y-4 md:space-y-0">
               <div className="text-xs font-light">
                 &copy; {new Date().getFullYear()} JRM AGRO. {t.footer.rights}
+                {/* Build: 2026-04-18-v1 */}
               </div>
               <div className="text-xs font-mono tracking-tighter">
                 {t.footer.tax_id}
