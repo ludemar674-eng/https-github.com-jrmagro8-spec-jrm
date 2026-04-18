@@ -41,10 +41,10 @@ export default function App() {
   }, []);
 
   const products = [
-    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/imagens/soja.png' },
-    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/imagens/acucar.png' },
-    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/imagens/milho.png' },
-    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/imagens/proteina-animal.png' },
+    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/jrm-assets/jrm-soja.png' },
+    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/jrm-assets/jrm-acucar.png' },
+    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/jrm-assets/jrm-milho.png' },
+    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/jrm-assets/jrm-proteina.png' },
   ];
 
   return (
@@ -111,7 +111,7 @@ export default function App() {
       <section id="home" className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/imagens/capa.png" 
+            src="/jrm-assets/jrm-capa.png" 
             alt="JRM Agro Background" 
             className="w-full h-full object-cover"
             loading="eager"
@@ -262,7 +262,7 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-3xl bg-slate-200 relative group">
                 <img 
-                  src="/imagens/modelo.png" 
+                  src="/jrm-assets/jrm-modelo.png" 
                   alt="Agriculture" 
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                   loading="lazy"
@@ -387,7 +387,7 @@ export default function App() {
             >
               <div className="h-64 overflow-hidden relative">
                 <img 
-                  src="/imagens/capa.png" 
+                  src="/jrm-assets/jrm-capa.png" 
                   alt="General Food" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
                 />
@@ -536,7 +536,7 @@ export default function App() {
             <div className="flex flex-col md:flex-row justify-between w-full items-center space-y-4 md:space-y-0">
               <div className="text-xs font-light">
                 &copy; {new Date().getFullYear()} JRM AGRO. {t.footer.rights}
-                {/* Build: 2026-04-18-v2 - Folder: imagens */}
+                {/* Build: 2026-04-18-v3 - Folder: jrm-assets */}
               </div>
               <div className="text-xs font-mono tracking-tighter">
                 {t.footer.tax_id}
