@@ -120,7 +120,7 @@ export const translations = {
     },
     footer: {
       rights: 'All rights reserved.',
-      tax_id: 'CNPJ: 14.002.893/0001-4',
+      tax_id: 'CNPJ: 33.458.878/0001-24',
     }
   },
   es: {
@@ -181,7 +181,7 @@ export const translations = {
     },
     footer: {
       rights: 'Todos los derechos reservados.',
-      tax_id: 'CNPJ: 14.002.893/0001-4',
+      tax_id: 'CNPJ: 33.458.878/0001-24',
     }
   }
 };
