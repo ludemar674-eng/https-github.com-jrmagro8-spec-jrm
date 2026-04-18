@@ -41,10 +41,10 @@ export default function App() {
   }, []);
 
   const products = [
-    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/imagens/soja.png' },
-    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/imagens/acucar.png' },
-    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/imagens/milho.png' },
-    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/imagens/proteina-animal.png' },
+    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/images/soja.png' },
+    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/images/acucar.png' },
+    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/images/milho.png' },
+    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/images/proteina animal.png' },
   ];
 
   return (
@@ -111,11 +111,15 @@ export default function App() {
       <section id="home" className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/imagens/capa.png" 
+            src="/images/capa.png" 
             alt="JRM Agro Background" 
             className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
             loading="eager"
             fetchPriority="high"
+            onError={(e) => {
+              e.currentTarget.src = 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=80&w=2000';
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-agro-green/80 to-transparent"></div>
         </div>
@@ -262,10 +266,14 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-3xl bg-slate-200 relative group">
                 <img 
-                  src="/imagens/modelo.png" 
+                  src="/images/modelo.png" 
                   alt="Agriculture" 
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
+                  referrerPolicy="no-referrer"
                   loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=1000';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-green/60 to-transparent opacity-60"></div>
               </div>
@@ -289,7 +297,7 @@ export default function App() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -305,7 +313,7 @@ export default function App() {
                 {t.global.subtitle}
               </p>
               
-              <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div className="space-y-6">
                 <div className="flex items-center space-x-4 p-6 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
                   <div className="p-3 bg-agro-gold rounded-2xl">
                     <Globe className="w-6 h-6 text-white" />
@@ -322,6 +330,21 @@ export default function App() {
                   <div>
                     <h4 className="font-bold text-lg">{t.global.logistics}</h4>
                     <p className="text-sm text-white/50">Portos de Santos, Paranaguá e Vitória</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="grid grid-cols-2 gap-6">
+                <div className="space-y-6">
+                  <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=600" alt="Shipping" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -356,7 +379,11 @@ export default function App() {
                     src={product.image} 
                     alt={t.products[product.id as keyof typeof t.products]} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    referrerPolicy="no-referrer"
                     loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.src = `https://picsum.photos/seed/${product.id}/800/1000`;
+                    }}
                   />
                   <div className="absolute inset-0 bg-agro-green/20 group-hover:bg-transparent transition-colors duration-500"></div>
                   <div className="absolute top-6 right-6 p-3 bg-white/90 backdrop-blur-md rounded-2xl text-agro-green shadow-lg">
@@ -387,9 +414,10 @@ export default function App() {
             >
               <div className="h-64 overflow-hidden relative">
                 <img 
-                  src="/imagens/capa.png" 
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800" 
                   alt="General Food" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-green to-transparent"></div>
                 <div className="absolute top-6 right-6 p-3 bg-white/10 backdrop-blur-md rounded-2xl text-white shadow-lg border border-white/20">
@@ -536,7 +564,6 @@ export default function App() {
             <div className="flex flex-col md:flex-row justify-between w-full items-center space-y-4 md:space-y-0">
               <div className="text-xs font-light">
                 &copy; {new Date().getFullYear()} JRM AGRO. {t.footer.rights}
-                {/* Build: 2026-04-18-v6 - Final Clean Paths */}
               </div>
               <div className="text-xs font-mono tracking-tighter">
                 {t.footer.tax_id}

@@ -1,2 +1,0 @@
-Este arquivo confirma que a pasta imagens existe e contém os seus arquivos PNG.
-Os arquivos PNG sao binarios e as vezes o editor os esconde na lista lateral, mas eles estao aqui!
