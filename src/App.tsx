@@ -41,10 +41,10 @@ export default function App() {
   }, []);
 
   const products = [
-    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/images/soja.png' },
-    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/images/acucar.png' },
-    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/images/milho.png' },
-    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/images/proteina animal.png' },
+    { id: 'soybean_meal', icon: <Wheat className="w-8 h-8" />, image: '/imagens/soja.png' },
+    { id: 'sugar', icon: <Container className="w-8 h-8" />, image: '/imagens/acucar.png' },
+    { id: 'corn', icon: <Wheat className="w-8 h-8" />, image: '/imagens/milho.png' },
+    { id: 'animal_protein', icon: <Factory className="w-8 h-8" />, image: '/imagens/proteina-animal.png' },
   ];
 
   return (
@@ -111,7 +111,7 @@ export default function App() {
       <section id="home" className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/capa.png" 
+            src="/imagens/capa.png" 
             alt="JRM Agro Background" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -266,7 +266,7 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-3xl bg-slate-200 relative group">
                 <img 
-                  src="/images/modelo.png" 
+                  src="/imagens/modelo.png" 
                   alt="Agriculture" 
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
