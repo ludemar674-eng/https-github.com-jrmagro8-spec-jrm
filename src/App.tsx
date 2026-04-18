@@ -117,9 +117,6 @@ export default function App() {
             referrerPolicy="no-referrer"
             loading="eager"
             fetchPriority="high"
-            onError={(e) => {
-              e.currentTarget.src = 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=80&w=2000';
-            }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-agro-green/80 to-transparent"></div>
         </div>
@@ -271,9 +268,6 @@ export default function App() {
                   className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
                   loading="lazy"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=1000';
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-agro-green/60 to-transparent opacity-60"></div>
               </div>
@@ -381,9 +375,6 @@ export default function App() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    onError={(e) => {
-                      e.currentTarget.src = `https://picsum.photos/seed/${product.id}/800/1000`;
-                    }}
                   />
                   <div className="absolute inset-0 bg-agro-green/20 group-hover:bg-transparent transition-colors duration-500"></div>
                   <div className="absolute top-6 right-6 p-3 bg-white/90 backdrop-blur-md rounded-2xl text-agro-green shadow-lg">
