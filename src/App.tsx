@@ -476,7 +476,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-2 text-lg">{t.contact.email}</h4>
-                    <p className="text-white/50 font-light">contato@jrmagro.com.br</p>
+                    <a href="mailto:contato@jmrbroker.com" className="text-white/50 font-light hover:text-agro-gold transition-colors">contato@jmrbroker.com</a>
                   </div>
                 </div>
                 <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left lg:space-x-6">
