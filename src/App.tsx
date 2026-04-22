@@ -485,7 +485,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-2 text-lg">{t.contact.phone}</h4>
-                    <p className="text-white/50 font-light">+351 916 806 780</p>
+                    <a href="https://wa.me/5513988039580" target="_blank" rel="noopener noreferrer" className="text-white/50 font-light hover:text-agro-gold transition-colors">+55 13 98803-9580</a>
                   </div>
                 </div>
               </div>
@@ -574,7 +574,7 @@ export default function App() {
         </motion.div>
         
         <motion.a
-          href="https://wa.me/351916806780"
+          href="https://wa.me/5513988039580"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0, opacity: 0 }}
